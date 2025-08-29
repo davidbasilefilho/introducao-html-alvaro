@@ -134,6 +134,12 @@
         transform: scale(1.05);
       }
 
+      .img-btn:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.5);
+        transform: scale(1.05);
+      }
+
       code {
         font-family: "Geist Mono", monospace;
         background-color: var(--muted);
@@ -167,7 +173,8 @@
         word-wrap: break-word;
         border-left: 2px solid var(--border);
         padding-left: 1rem;
-        font-weight: 700;
+        font-weight: 500;
+        font-family: "Geist Mono", monospace;
       }
     </style>
   </head>
@@ -184,6 +191,8 @@
       target="_blank"
       rel="noopener noreferrer"
       class="btn-primary"
+      autofocus
+      accesskey="c"
       >Site do CEUNSP</a
     >
 
@@ -192,6 +201,7 @@
       href="https://youtu.be/dQw4w9WgXcQ?si=bu28_sUMWwuoVehP"
       target="_blank"
       class="img-btn"
+      accesskey="s"
       style="margin-top: 2rem; margin-bottom: 2rem"
       rel="noopener noreferrer"
     >
@@ -205,7 +215,8 @@
     <pre>
 And in the end
 the love you take
-is equal to the love you make.</pre>
+is equal to the love you make.</pre
+    >
     <p class="font-medium" style="margin-left: 0.5rem">
       &#8212; McCartney, Paul, 1969
     </p>
