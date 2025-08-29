@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Hello World Page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap");
+      body {
+        font-family: "Geist", sans-serif;
+        line-height: 1.5;
+
+        --primary: #0070f3;
+        --primary-foreground: #ffffff;
+        --background: #f0f0f0;
+        --foreground: #000000;
+        --muted: #bbb;
+        --muted-foreground: #ffffff;
+        --border: #999;
+        --radius: 0.75rem;
+        --radius-sm: 0.5rem;
+        --radius-lg: 1rem;
+        --speed: 0.2s;
+        --text-base: 0.875rem;
+        --text-lg: 1rem;
+        --text-sm: 0.7rem;
+        --text-xl: 1.25rem;
+        --text-2xl: 1.5rem;
+        --text-xs: 0.625rem;
+
+        border-color: var(--border);
+        background-color: var(--background);
+        color: var(--foreground);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .float-right {
+        float: right;
+      }
+
+      .font-bold {
+        font-weight: bold;
+      }
+
+      .font-black {
+        font-weight: 800;
+      }
+
+      .font-semibold {
+        font-weight: 600;
+      }
+
+      .font-medium {
+        font-weight: 500;
+      }
+
+      .font-regular {
+        font-weight: 400;
+      }
+
+      .text-base {
+        font-size: var(--text-base);
+      }
+
+      .text-lg {
+        font-size: var(--text-lg);
+      }
+
+      .text-sm {
+        font-size: var(--text-sm);
+      }
+
+      .text-xl {
+        font-size: var(--text-xl);
+      }
+
+      .text-2xl {
+        font-size: var(--text-2xl);
+      }
+
+      .text-xs {
+        font-size: var(--text-xs);
+      }
+
+      .btn-primary {
+        background-color: var(--primary);
+        color: var(--primary-foreground);
+        border: 1px solid transparent;
+        border-radius: var(--radius);
+        padding: 8px 12px;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color var(--speed) ease,
+          opacity var(--speed) ease;
+        cursor: pointer;
+        user-select: none;
+      }
+      .btn-primary:hover {
+        background-color: var(--primary);
+        opacity: 0.9;
+      }
+      .btn-primary:disabled {
+        background-color: var(--primary);
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .btn-primary:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.5);
+        background-color: var(--primary);
+        opacity: 0.9;
+      }
+
+      .img-btn {
+        display: inline-block;
+        border-radius: var(--radius);
+        overflow: hidden;
+        height: 16rem;
+        width: 10rem;
+        transition: transform var(--speed) ease;
+      }
+
+      .img-btn:hover {
+        transform: scale(1.05);
+      }
+
+      code {
+        font-family: "Geist Mono", monospace;
+        background-color: var(--muted);
+
+        border-radius: var(--radius-sm);
+        padding: 0.2rem 0.4rem;
+        font-size: var(--text-sm);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      pre,
+      button {
+        /* reset */
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0.4rem;
+        font-size: var(--text-base);
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        border-left: 2px solid var(--border);
+        padding-left: 1rem;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="font-black text-2xl">Hello world!</h1>
+    <h2 class="font-black text-xl">Título 2</h2>
+    <h3 class="font-black text-lg">Título 3</h3>
+    <h4 class="font-bold text-base">Título 4</h4>
+    <h5 class="font-bold text-sm" style="margin-bottom: 2rem">Título 5</h5>
+
+    <p class="text-base font-regular">Este é um parágrafo.</p>
+    <a
+      href="http://www.ceunsp.edu.br/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn-primary"
+      >Site do CEUNSP</a
+    >
+
+    <br />
+    <a
+      href="https://youtu.be/dQw4w9WgXcQ?si=bu28_sUMWwuoVehP"
+      target="_blank"
+      class="img-btn"
+      style="margin-top: 2rem; margin-bottom: 2rem"
+      rel="noopener noreferrer"
+    >
+      <img src="./img/serj.jpg" alt="Serj Tankian" />
+    </a>
+
+    <p>
+      The pre tag preserves both <code>white-space</code> and
+      <code>font-family</code> styles.
+    </p>
+    <pre>
+And in the end
+the love you take
+is equal to the love you make.</pre>
+    <p class="font-medium" style="margin-left: 0.5rem">
+      &#8212; McCartney, Paul, 1969
+    </p>
+  </body>
+</html>
